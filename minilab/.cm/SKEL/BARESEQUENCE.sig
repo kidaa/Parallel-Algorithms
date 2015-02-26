@@ -1,0 +1,2 @@
+Skeleton 5
+ac"BARESEQUENCE"h0

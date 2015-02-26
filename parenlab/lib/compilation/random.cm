@@ -1,0 +1,9 @@
+Group
+  signature RANDOM210
+  functor MkMersenneTwister
+is
+  ../210basis.cm
+  signatures.cm
+  sequence.cm
+
+  ../structures/MkMersenneTwister.sml

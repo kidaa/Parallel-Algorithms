@@ -1,0 +1,40 @@
+#!/bin/bash
+
+. support/config
+
+for file in $REQUIRED_FILES
+do
+  if [ ! -f $file ]; then
+    echo "*************************************************"
+    echo "  ERROR: $file REQUIRED TO SUBMIT"
+    echo "*************************************************"
+    exit 1
+  fi
+done
+
+for file in $WARNING_FILES
+do
+  if [ ! -f $file ]; then
+    echo "*************************************************"
+    echo "  WARNING: SUBMITTING WITHOUT $file"
+    echo "*************************************************"
+  fi
+done
+
+echo $REQUIRED_FILES $WARNING_FILES | xargs tar czf handin.tgz
+
+if [ $# -eq 0 ]; then
+  USER=$(whoami)
+
+  DESTINATION=$(wget -q -O- "http://unofficial.fish.ics.cs.cmu.edu/officialSubmit.rb?course=15210-f14&user=${USER}&assessment=${LAB_NAME}")
+  cp handin.tgz ${DESTINATION}
+  wget -q -O- "http://unofficial.fish.ics.cs.cmu.edu/officialSubmit.rb?course=15210-f14&user=${USER}&assessment=${LAB_NAME}&submit=handin.tgz" | grep "Submission received"
+
+  ERR=$?
+
+  if [ $ERR -ne 0 ]; then
+    echo "Submission NOT received! Try submitting handin.tgz manually through Autolab, or contact a TA."
+  else
+    echo "Please verify your score on Autolab."
+  fi
+fi

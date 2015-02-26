@@ -1,0 +1,9 @@
+Library
+  library(210basis.cm)
+  source(-)
+is
+  210basis.cm
+  ../BARESEQUENCE.sig
+  ../PARTIALSEQUENCE.sig
+  ../SEQFUN.sig
+  BareArraySequence.sml

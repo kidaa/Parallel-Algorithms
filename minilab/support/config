@@ -1,0 +1,3 @@
+HANDIN_FILES="MkPartialSequence.sml MkSeqFun.sml written.pdf"
+LAB_NAME="minilab"
+INCL_LIB=false

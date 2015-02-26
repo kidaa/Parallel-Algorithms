@@ -1,0 +1,29 @@
+#!/bin/bash
+
+. support/config
+
+for file in $HANDIN_FILES
+do
+  if [ ! -f $file ]; then
+    echo "You must have a $file to submit."
+    exit 1
+  fi
+done
+
+echo $HANDIN_FILES | xargs tar czf handin.tgz
+
+if [ $# -eq 0 ]; then
+  USER=$(whoami)
+
+  DESTINATION=$(wget -q -O- "http://unofficial.fish.ics.cs.cmu.edu/officialSubmit.rb?course=15210-f14&user=${USER}&assessment=${LAB_NAME}")
+  cp handin.tgz ${DESTINATION}
+  wget -q -O- "http://unofficial.fish.ics.cs.cmu.edu/officialSubmit.rb?course=15210-f14&user=${USER}&assessment=${LAB_NAME}&submit=handin.tgz" | grep "Submission received"
+
+  ERR=$?
+
+  if [ $ERR -ne 0 ]; then
+    echo "Submission NOT received! Try submitting handin.tgz manually through Autolab, or contact a TA."
+  else
+    echo "Please verify your score on Autolab."
+  fi
+fi

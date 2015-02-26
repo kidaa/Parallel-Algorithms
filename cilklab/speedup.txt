@@ -1,0 +1,79 @@
+4
+Serial time:	14.401s
+Parallel time:	3.886s	[Speedup: 3.71x]
+
+Serial time:	15.121s
+Parallel time:	4.248s	[Speedup: 3.56x]
+
+Serial time:	15.134s
+Parallel time:	3.968s	[Speedup: 3.81x]
+
+8
+Serial time:	14.027s
+Parallel time:	2.422s	[Speedup: 5.79x]
+
+Serial time:	14.982s
+Parallel time:	2.974s	[Speedup: 5.04x]
+
+Serial time:	14.238s
+Parallel time:	2.694s	[Speedup: 5.29x]
+
+10
+Serial time:	13.894s
+Parallel time:	2.075s	[Speedup: 6.70x]
+
+Serial time:	12.912s
+Parallel time:	2.022s	[Speedup: 6.39x]
+
+Serial time:	13.046s
+Parallel time:	2.100s	[Speedup: 6.21x]
+
+12
+Serial time:	14.072s
+Parallel time:	2.401s	[Speedup: 5.86x]
+
+Serial time:	13.794s
+Parallel time:	2.310s	[Speedup: 5.97x]
+
+Serial time:	14.049s
+Parallel time:	2.309s	[Speedup: 6.08x]
+
+14
+Serial time:	13.845s
+Parallel time:	2.169s	[Speedup: 6.38x]
+
+Serial time:	13.716s
+Parallel time:	2.205s	[Speedup: 6.22x]
+
+Serial time:	13.114s
+Parallel time:	2.164s	[Speedup: 6.06x]
+
+16
+Serial time:	15.074s
+Parallel time:	2.140s	[Speedup: 7.04x]
+
+Serial time:	13.951s
+Parallel time:	2.213s	[Speedup: 6.30x]
+
+Serial time:	13.578s
+Parallel time:	2.122s	[Speedup: 6.40x]
+
+20
+Serial time:	13.620s
+Parallel time:	2.460s	[Speedup: 5.54x]
+
+Serial time:	14.266s
+Parallel time:	2.192s	[Speedup: 6.51x]
+
+Serial time:	13.228s
+Parallel time:	2.551s	[Speedup: 5.19x]
+
+24
+Serial time:	13.524s
+Parallel time:	2.230s	[Speedup: 6.07x]
+
+Serial time:	13.584s
+Parallel time:	2.232s	[Speedup: 6.08x]
+
+Serial time:	13.273s
+Parallel time:	2.606s	[Speedup: 5.09x]

@@ -1,0 +1,3 @@
+REQUIRED_FILES="MkSeamFind.sml"
+WARNING_FILES="written.pdf"
+LAB_NAME="dplab"

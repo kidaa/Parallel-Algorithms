@@ -1,0 +1,7 @@
+Group
+  structure Hashing
+is
+  $/basis.cm
+  signatures.cm
+
+  ../structures/Hashing.sml

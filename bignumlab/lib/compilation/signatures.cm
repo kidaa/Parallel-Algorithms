@@ -1,0 +1,27 @@
+Group
+  signature BSTREE
+  signature RANDOM210
+  signature SET
+  signature ELEMENT
+  signature PRIMITIVES
+  signature TABLE
+  signature ORDKEY
+  signature EQKEY
+  signature HASHKEY
+  signature PQUEUE
+  signature SEQUENCE
+  signature ST_SEQUENCE
+  signature HASHING
+is
+  $/basis.cm
+  ../signatures/BSTREE.sig
+  ../signatures/RANDOM210.sig
+  ../signatures/SET.sig
+  ../signatures/ELEMENT.sig
+  ../signatures/PRIMITIVES.sig
+  ../signatures/TABLE.sig
+  ../signatures/KEY.sig
+  ../signatures/PQUEUE.sig
+  ../signatures/SEQUENCE.sig
+  ../signatures/ST_SEQUENCE.sig
+  ../signatures/HASHING.sig

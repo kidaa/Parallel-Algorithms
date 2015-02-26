@@ -1,0 +1,36 @@
+functor MkBruteForcePD (structure P : PAREN_PACKAGE) : PAREN_DIST =
+struct
+  structure P = P
+  open P
+  open Seq
+
+  (* Remove this line when you're done. *)
+  exception NotYetImplemented
+  
+  fun parenMatch s =
+      let
+	fun pm s =
+	case showt s
+	  of   EMPTY = > (0 ,0)
+	   | ELT OPAREN = > (0 ,1)
+	   | ELT CPAREN = > (1 ,0)
+	   | NODE (l , r ) = >
+	      let
+		val (( i , j ) ,(k , l ) ) =
+	  	par (fn () = > pm l , fn () = > pm r )
+	      in
+		if j > k then (i , l +j - k )
+	  	else ( i +k -j , l )
+	     end
+	in
+	pm s = (0 , 0)
+	end
+
+  fun allSubseqs S =
+      case length S
+      	of 1 => S
+	|  2 => 
+
+  fun parenDist (parens : paren seq) : int option =
+      raise NotYetImplemented
+end

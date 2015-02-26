@@ -1,0 +1,5 @@
+Library
+  structure TextIO
+  structure Unsafe
+is
+  $/basis.cm

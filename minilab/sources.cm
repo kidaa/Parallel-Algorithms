@@ -1,0 +1,7 @@
+Group is
+  support/support.cm
+  
+  MkPartialSequence.sml
+  MkSeqFun.sml
+
+  Testing.sml

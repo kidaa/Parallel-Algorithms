@@ -1,0 +1,8 @@
+Group is
+  support/support.cm
+  
+  MkAllShortestPaths.sml
+  MkThesaurusASP.sml
+
+  support/Tester.sml
+  Tests.sml

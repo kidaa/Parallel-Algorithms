@@ -1,0 +1,2 @@
+Skeleton 5
+ad"SegTester"jh5Cáä¢Seq"çğ±ä¢ArraySequence"eçğ±ÿf3d"ImageIO"d"ForestImage"d"ImageGraph"aä¢Rand"jh1ÿgp1e"MkMersenneTwister"ad"Segmenter"jjh2aÿÿ,aÿgp1ÿgp1e"MkBoruvkaSegmenter"gp1c"SEGMENTER"Nh0

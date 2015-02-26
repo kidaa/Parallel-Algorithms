@@ -1,0 +1,4 @@
+REQUIRED_FILES="stars/cilkStars.cpp"
+WARNING_FILES="written.pdf"
+LAB_NAME="cilklab"
+INCL_LIB=false

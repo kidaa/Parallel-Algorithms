@@ -1,0 +1,9 @@
+Group is
+  support/support.cm
+
+  support/MkRefMarkovChain.sml
+  MkRTableMarkovChain.sml
+  MkBabble.sml
+
+  Tests.sml
+  support/Testing.sml
